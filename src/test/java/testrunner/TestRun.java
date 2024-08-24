@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 					//features = {".//features/login.feature"}
 					//features = {".//features/login.feature", ".//features/login2.features"}
 					//features = {"@target/rerun.txt"}
-					features = {".//features/loginDDTExcel.feature"},
+					//features = {".//features/loginDDTExcel.feature"},
+					features = {".//features/login2.feature"},
 					//features = {".//features/registration.feature"}, 
 					glue={"stepsdefinitions","hooks"},
 					plugin= {
@@ -20,13 +21,13 @@ import io.cucumber.junit.CucumberOptions;
 					},
 					dryRun=false,
 					monochrome=true,
-					publish=true
+					publish=true,
 					//tags="@sanity"
 					//tags="@regression"
 					//tags="@sanity and @regression"
 					//tags="@sanity and not @regression"
 					//tags="@sanity or @regression"
-					//tags="@regression and not @sanity"
+					tags="@regression and not @sanity"
 		)
 public class TestRun {
 
