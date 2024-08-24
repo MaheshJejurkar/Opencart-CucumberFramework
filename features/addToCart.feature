@@ -1,2 +1,3 @@
-Feature : Add product to cart
-Scenario : Add valid product to cart
+Feature: Add to cart
+
+  Scenario: Add valid item to cart
