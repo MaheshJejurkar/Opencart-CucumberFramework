@@ -23,7 +23,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	public static Logger logger;
-	static Properties properties;
+	public static Properties properties;
 	public static ChromeOptions chromeoptions;
 
 
@@ -50,7 +50,8 @@ public class BaseClass {
 			case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
 			default : System.out.println("No match to browser."); return null;
 			}
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
+			
 		}else 
 			if (executionEnv.equals("local")) {
 			switch (browser) {
