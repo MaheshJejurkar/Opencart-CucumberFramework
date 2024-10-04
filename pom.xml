@@ -44,6 +44,13 @@
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.19.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>7.18.0</version>
 			<scope>test</scope>

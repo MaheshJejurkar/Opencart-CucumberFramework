@@ -28,9 +28,10 @@ public class DataReader {
 			for(int j=0; j<currentRow.getPhysicalNumberOfCells(); j++) {
 				XSSFCell currentCell	= currentRow.getCell(j);
 				currentHashMap.put(headerRow.getCell(j).toString(), currentCell.toString());
-				System.out.println(currentCell.toString());
+				System.out.print(currentCell.toString()+"\t");
 			}
 			mydata.add(currentHashMap);
+			System.out.println();
 		}
 		workbook.close();
 		fis.close();

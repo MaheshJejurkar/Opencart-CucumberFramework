@@ -32,7 +32,7 @@ public class LoginSteps {
 
 
 	@When("the user clicks on the login button")
-	public void the_user_clicks_on_the_login_button() throws InterruptedException {
+	public void the_user_clicks_on_the_login_button() throws Exception {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
 
