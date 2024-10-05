@@ -1,0 +1,7 @@
+05-10-2024-09-02-18-am [main] INFO factory.BaseClass - Launched application.
+05-10-2024-09-02-19-am [main] INFO factory.BaseClass - Clicked my account.
+05-10-2024-09-02-19-am [main] INFO factory.BaseClass - Clicked login.
+05-10-2024-09-02-21-am [main] INFO factory.BaseClass - Entered email.
+05-10-2024-09-02-22-am [main] INFO factory.BaseClass - Entered password.
+05-10-2024-09-02-23-am [main] INFO factory.BaseClass - Clicked login.
+05-10-2024-09-02-25-am [main] INFO factory.BaseClass - User logged in successfully.

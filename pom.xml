@@ -20,7 +20,7 @@
 					<version>3.4.0</version>
 					<configuration>
 						<includes>
-							<include>**/*TestRun.java</include>
+							<include>.//RunnerClass.java</include>
 						</includes>
 					</configuration>
 				</plugin>
@@ -47,7 +47,6 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>7.19.0</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -106,4 +105,6 @@
 
 
 	</dependencies>
+	
+	
 </project>

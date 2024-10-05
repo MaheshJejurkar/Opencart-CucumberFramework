@@ -8,16 +8,16 @@
 	<Appenders>
 		<Console name="Console" target="SYSTEM_OUT">
 			<PatternLayout
-				pattern="%d{dd-MM-yyyy hh:mm:ss a} [%t] %level %logger{50} - %msg%n">
+				pattern="%d{dd-MM-yyyy-hh-mm-ss-a} [%t] %level %logger{50} - %msg%n">
 			</PatternLayout>
 		</Console>
 
 		<RollingFile name="File" fileName="${basePath}/OpenCart.log"
 			filePattern="${basePath}/OpenCart-%d{dd-MM-yyyy}.log">
 			<PatternLayout 
-				pattern="%d{dd-MM-yyyy hh:mm:ss a} [%t] %level %logger{50} - %msg%n">
+				pattern="%d{dd-MM-yyyy-hh-mm-ss-a} [%t] %level %logger{50} - %msg%n">
 			</PatternLayout>
-			<SizeBasedTriggeringPolicy size="5000"/>
+			<SizeBasedTriggeringPolicy size="50000"/>
 		</RollingFile>
 		
 	</Appenders>

@@ -24,28 +24,31 @@ public class LoginSteps2 {
 	
 	@Given("user navigate to login page")
 	public void user_navigate_to_login_page() throws Exception {
-		BaseClass.getLogger().info("Goto my account -> Click on Login.");
+		BaseClass.getLogger().info("Launched application.");
 		hp=new HomePage(BaseClass.getDriver());
 		
 		Thread.sleep(1000);
+		BaseClass.getLogger().info("Clicked my account.");
 		hp.clickMyaccount();
+		BaseClass.getLogger().info("Clicked login.");
 		hp.clickLogin();
 	}
 
 	@When("user enters email as {string} and password as {string}")
 	public void user_enters_email_as_and_password_as(String email, String password) throws Exception {
 		Thread.sleep(1000);
-		BaseClass.getLogger().info("Entering email and password.");
 		lp=new LoginPage(BaseClass.getDriver());
+		BaseClass.getLogger().info("Entered email.");
 		lp.enterEmail(email);
+		BaseClass.getLogger().info("Entered password.");
 		lp.enterPassword(password);
 	}
 
 	@When("user clicks on login button")
 	public void user_clicks_on_login_button() throws Exception {
 		Thread.sleep(1000);
+		BaseClass.getLogger().info("Clicked login.");
 		lp.clickLogin();
-		BaseClass.getLogger().info("Clicked on login.");
 	}
 
 	@Then("user should be redirected to the myaccount page")
@@ -54,6 +57,7 @@ public class LoginSteps2 {
 		ap=new AccountPage(BaseClass.getDriver());
 		boolean result = ap.isMyAccountPageExists();
 		Assert.assertEquals(true, result);
+		BaseClass.getLogger().info("User logged in successfully.");
 	}
 	
 	@Then("user should be redirected to the myaccount page by passing email and password with excel row {string}")
