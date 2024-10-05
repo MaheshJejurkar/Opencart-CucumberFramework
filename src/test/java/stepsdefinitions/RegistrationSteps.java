@@ -14,7 +14,7 @@ import utilities.BaseClass;
 
 public class RegistrationSteps {
 	WebDriver driver;
-	
+
 	HomePage homepage;
 	LoginPage loginpage;
 	AccountPage accountpage;

@@ -12,3 +12,24 @@
 05-10-2024-06-44-55-pm [main] INFO factory.BaseClass - Entered password.
 05-10-2024-06-44-56-pm [main] INFO factory.BaseClass - Clicked login.
 05-10-2024-06-44-58-pm [main] INFO factory.BaseClass - User logged in successfully.
+05-10-2024-06-56-12-pm [main] INFO utilities.BaseClass - Launched application.
+05-10-2024-06-56-13-pm [main] INFO utilities.BaseClass - Clicked my account.
+05-10-2024-06-56-13-pm [main] INFO utilities.BaseClass - Clicked login.
+05-10-2024-06-56-15-pm [main] INFO utilities.BaseClass - Entered email.
+05-10-2024-06-56-15-pm [main] INFO utilities.BaseClass - Entered password.
+05-10-2024-06-56-16-pm [main] INFO utilities.BaseClass - Clicked login.
+05-10-2024-06-56-18-pm [main] INFO utilities.BaseClass - User logged in successfully.
+05-10-2024-06-57-03-pm [main] INFO utilities.BaseClass - Launched application.
+05-10-2024-06-57-04-pm [main] INFO utilities.BaseClass - Clicked my account.
+05-10-2024-06-57-04-pm [main] INFO utilities.BaseClass - Clicked login.
+05-10-2024-06-57-05-pm [main] INFO utilities.BaseClass - Entered email.
+05-10-2024-06-57-05-pm [main] INFO utilities.BaseClass - Entered password.
+05-10-2024-06-57-07-pm [main] INFO utilities.BaseClass - Clicked login.
+05-10-2024-06-57-08-pm [main] INFO utilities.BaseClass - User logged in successfully.
+05-10-2024-06-57-52-pm [main] INFO utilities.BaseClass - Launched application.
+05-10-2024-06-57-53-pm [main] INFO utilities.BaseClass - Clicked my account.
+05-10-2024-06-57-53-pm [main] INFO utilities.BaseClass - Clicked login.
+05-10-2024-06-57-55-pm [main] INFO utilities.BaseClass - Entered email.
+05-10-2024-06-57-55-pm [main] INFO utilities.BaseClass - Entered password.
+05-10-2024-06-57-56-pm [main] INFO utilities.BaseClass - Clicked login.
+05-10-2024-06-57-58-pm [main] INFO utilities.BaseClass - User logged in successfully.

@@ -1,56 +1,60 @@
 package stepsdefinitions;
 
-import java.time.Duration;
-
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageobjects.AccountPage;
+import pageobjects.HomePage;
+import pageobjects.LoginPage;
+import utilities.BaseClass;
 
 public class LoginSteps {
+	
 	WebDriver driver;
 	
-	@Given("the user is on the ecommerce login page")
-	public void the_user_is_on_the_ecommerce_login_page() throws Exception {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
-		driver.get("https://tutorialsninja.com/demo/");
-		driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
+	HomePage homepage;
+	LoginPage loginpage;
+	AccountPage accountpage;
+	
+	@Given("User navigate to login page")
+	public void user_navigate_to_login_page() throws Exception {
+		BaseClass.getLogger().info("Launched application.");
+		homepage = new HomePage(BaseClass.getDriver());
+
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//a[normalize-space()='Login']")).click();
+		BaseClass.getLogger().info("Clicked my account.");
+		homepage.clickMyaccount();
+		BaseClass.getLogger().info("Clicked login.");
+		homepage.clickLogin();
 	}
 
-	@When("the user enters valid credentials \\(username:{string}, password:{string})")
-	public void the_user_enters_valid_credentials_username_password(String username, String password) throws Exception {
+	@When("User enters email as {string} and password as {string}")
+	public void user_enters_email_as_and_password_as(String email, String password) throws Exception {
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(username);
-		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(password);
+		loginpage = new LoginPage(BaseClass.getDriver());
+		BaseClass.getLogger().info("Entered email.");
+		loginpage.enterEmail(email);
+		BaseClass.getLogger().info("Entered password.");
+		loginpage.enterPassword(password);
 	}
 
-
-	@When("the user clicks on the login button")
-	public void the_user_clicks_on_the_login_button() throws Exception {
+	@When("User clicks on login button")
+	public void user_clicks_on_login_button() throws Exception {
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
-
+		BaseClass.getLogger().info("Clicked login.");
+		loginpage.clickLogin();
 	}
 
-	@Then("the user should be redirected to the my account page")
-	public void the_user_should_be_redirected_to_the_my_account_page() throws Exception {
+	@Then("User should be redirected to the myaccount page")
+	public void user_should_be_redirected_to_the_myaccount_page() throws Exception {
 		Thread.sleep(1000);
-		boolean status = driver.findElement(By.xpath("//div[@id='content']/h2[1]")).isDisplayed();
-		Assert.assertEquals(true, status);
+		accountpage = new AccountPage(BaseClass.getDriver());
+		boolean result = accountpage.isMyAccountPageExists();
+		Assert.assertEquals(true, result);
+		BaseClass.getLogger().info("User logged in successfully.");
 	}
 
-	@Then("the user should see a welcome message")
-	public void the_user_should_see_a_welcome_message() throws Exception {
-		Thread.sleep(1000);
-		String actual_text = driver.findElement(By.xpath("//div[@id='content']/h2[1]")).getText();
-		String expected_text = "My Account";
-		Assert.assertEquals(expected_text, actual_text);
-		driver.close();
-	}
 }

@@ -19,11 +19,12 @@ import io.cucumber.testng.CucumberOptions;
 					//features = {"src/test/java/features/login.feature"},
 					//features = {"src/test/java/features/login.feature", "src/test/java/features/login2.feature"},
 					//features = {"src/test/java/features/loginDDTExcel.feature"},
-					features = {"src/test/java/features/login2.feature"},
+					//features = {"src/test/java/features/login2.feature"},
+					features = {"src/test/java/features/login2.feature"}
 					//features = {"@target/rerun.txt"},
 					//tags = "@sanity"
 					//tags = "@regression"
-					tags = "@sanity and @regression"
+					//tags = "@sanity and @regression"
 					//tags = "@sanity or @regression"
 					//tags = "@sanity and not @regression"
 					//tags = "@regression and not @sanity"
