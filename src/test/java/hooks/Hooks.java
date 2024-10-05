@@ -6,15 +6,15 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import factory.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import utilities.BaseClass;
 
 public class Hooks {
 	WebDriver driver;
-	Properties p;
+	Properties properties;
 
 	@Before
 	public void setup() throws Exception {
@@ -22,10 +22,9 @@ public class Hooks {
 		Runtime.getRuntime().exec("cmd /c start_dockergrid.bat");
 		Thread.sleep(20000);
 
+		properties = BaseClass.getProperties();
 		driver = BaseClass.initializeBrowser();
-		p = BaseClass.getProperties();
-		driver.manage().window().maximize();
-		driver.get(p.getProperty("tutorialsninja"));
+		driver.get(properties.getProperty("tutorialsninja"));
 	}
 
 	@After

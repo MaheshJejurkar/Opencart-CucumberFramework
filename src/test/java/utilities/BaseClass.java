@@ -1,4 +1,4 @@
-package factory;
+package utilities;
 
 import java.io.FileReader;
 import java.net.URL;
@@ -66,7 +66,7 @@ public class BaseClass {
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return driver;
 	}
