@@ -15,9 +15,9 @@ import utilities.BaseClass;
 import utilities.DataReader;
 
 public class LoginSteps_DDT {
-	
+
 	WebDriver driver;
-	
+
 	HomePage homepage;
 	LoginPage loginpage;
 	AccountPage accountpage;
@@ -36,30 +36,40 @@ public class LoginSteps_DDT {
 		String email = datamap.get(index).get("Username");
 		String password = datamap.get(index).get("Password");
 		String expectedResult = datamap.get(index).get("Result");
-
+		
 		loginpage = new LoginPage(BaseClass.getDriver());
+		BaseClass.getLogger().info("Entered email.");
 		loginpage.enterEmail(email);
+		BaseClass.getLogger().info("Entered password.");
 		loginpage.enterPassword(password);
+		BaseClass.getLogger().info("Clicked login.");
 		loginpage.clickLogin();
 
 		accountpage = new AccountPage(BaseClass.getDriver());
+
 		try {
 			boolean pageStatus = accountpage.isMyAccountPageExists();
-			System.out.println(pageStatus);
 			if (expectedResult.equalsIgnoreCase("Valid")) {
 				if (pageStatus == true) {
-					AccountPage ap = new AccountPage(BaseClass.getDriver());
-					ap.clickLogout();
+					BaseClass.getLogger().info("User logged in successfully.");
+					BaseClass.scrollToHeight();
+					BaseClass.getLogger().info("Clicked logout.");
+					accountpage.clickLogout();
 					Assert.assertEquals(true, pageStatus);
 				} else {
+					BaseClass.getLogger().info("User login failed.");
 					Assert.assertEquals(true, false);
 				}
 			}
 			if (expectedResult.equalsIgnoreCase("Invalid")) {
 				if (pageStatus == true) {
+					BaseClass.getLogger().info("User logged in.");
+					BaseClass.scrollToHeight();
+					BaseClass.logger.info("Clicked logout.");
 					accountpage.clickLogout();
 					Assert.assertTrue(false);
 				} else {
+					BaseClass.getLogger().info("User login failed.");
 					Assert.assertTrue(true);
 				}
 			}

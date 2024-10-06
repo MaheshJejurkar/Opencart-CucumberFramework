@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,6 +26,7 @@ public class BaseClass {
 	public static Logger logger;
 	public static Properties properties;
 	public static ChromeOptions chromeoptions;
+	public static JavascriptExecutor javascriptExecutor;
 
 
 	public static WebDriver initializeBrowser() throws Exception {
@@ -82,8 +84,13 @@ public class BaseClass {
 		return properties;
 	}
 	
+	public static JavascriptExecutor getJavaScriptExecutor() {
+		javascriptExecutor = (JavascriptExecutor)driver;
+		return javascriptExecutor;
+	}
+	
 	public static Logger getLogger() {
-		logger = LogManager.getLogger(BaseClass.class);
+		logger = LogManager.getLogger("Opencart");
 		return logger;
 	}
 
@@ -99,5 +106,9 @@ public class BaseClass {
 		String generatedstring = RandomStringUtils.randomAlphabetic(3);
 		String generatednumber = RandomStringUtils.randomNumeric(3);
 		return (generatedstring + "." + generatednumber);
+	}
+	
+	public static void scrollToHeight() {
+		getJavaScriptExecutor().executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
 }

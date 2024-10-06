@@ -1,11 +1,11 @@
 Feature: User login 2
 
-  @regression
+  @Regression
   Scenario Outline: To test login with valid set of credentials
     Given User navigate to login page
     When User enters email as "<Email>" and password as "<Password>"
     And User clicks on login button
-    Then User should be redirected to the myaccount page
+    Then User should be redirected to myaccount page
 
     Examples: 
       | Email                     | Password    |

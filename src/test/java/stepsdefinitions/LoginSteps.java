@@ -25,9 +25,9 @@ public class LoginSteps {
 		homepage = new HomePage(BaseClass.getDriver());
 
 		Thread.sleep(1000);
-		BaseClass.getLogger().info("Clicked my account.");
+		BaseClass.getLogger().info("Clicked my account link.");
 		homepage.clickMyaccount();
-		BaseClass.getLogger().info("Clicked login.");
+		BaseClass.getLogger().info("Clicked login link.");
 		homepage.clickLogin();
 	}
 
@@ -48,13 +48,17 @@ public class LoginSteps {
 		loginpage.clickLogin();
 	}
 
-	@Then("User should be redirected to the myaccount page")
-	public void user_should_be_redirected_to_the_myaccount_page() throws Exception {
+	@Then("User should be redirected to myaccount page")
+	public void user_should_be_redirected_to_myaccount_page() throws Exception {
 		Thread.sleep(1000);
 		accountpage = new AccountPage(BaseClass.getDriver());
 		boolean result = accountpage.isMyAccountPageExists();
 		Assert.assertEquals(true, result);
 		BaseClass.getLogger().info("User logged in successfully.");
+		Thread.sleep(2000);
+		BaseClass.scrollToHeight();
+		BaseClass.getLogger().info("Cliked logout.");
+		accountpage.clickLogout();
 	}
 
 }
