@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 06 19:16:03 IST 2024</td>
+<td>Started on:</td><td>Sun Oct 06 20:40:55 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>115 seconds (115068 ms)</td>
+<tr><td>Total time:</td><td>101 seconds (101004 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,25 +76,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testrunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test login with valid set of credentials", "User login 2"</td>
-<td><div><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepsdefinitions.LoginSteps.user_should_be_redirected_to_myaccount_page(LoginSteps.java:56)
-	at ✽.User should be redirected to myaccount page(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_2.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1381702512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1381702512'><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepsdefinitions.LoginSteps.user_should_be_redirected_to_myaccount_page(LoginSteps.java:56)
-	at ✽.User should be redirected to myaccount page(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_2.feature:8)
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid set of data from excel", "User login data driven test"</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.LoginSteps_DDT.user_should_be_redirected_to_the_myaccount_page_by_passing_email_and_password_with_excel_row(LoginSteps_DDT.java:62)
+	at ✽.User should be redirected to the myaccount page by passing email and password with excel row &quot;2&quot;(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_DDT.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1444477983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1444477983'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.LoginSteps_DDT.user_should_be_redirected_to_the_myaccount_page_by_passing_email_and_password_with_excel_row(LoginSteps_DDT.java:62)
+	at ✽.User should be redirected to the myaccount page by passing email and password with excel row &quot;2&quot;(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_DDT.feature:5)
 </pre></div></td>
-<td>51</td>
-<td>testrunner.RunnerClass@2002fc1d</td></tr>
+<td>46</td>
+<td>testRunner.TestRunner@2002fc1d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -105,10 +103,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testrunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test login with valid set of credentials", "User login 2"</td>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid set of data from excel", "User login data driven test"</td>
 <td></td>
-<td>58</td>
-<td>testrunner.RunnerClass@2002fc1d</td></tr>
+<td>48</td>
+<td>testRunner.TestRunner@2002fc1d</td></tr>
 </table><p>
 </body>
 </html>

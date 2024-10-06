@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 6, 2024 07:16:03 pm</span></a>
+<a href="#"><span class="badge badge-primary">Oct 6, 2024 08:37:46 pm</span></a>
 </li>
 </ul>
 </div>
@@ -50,11 +50,6 @@
 <li class="nav-item dropdown" onclick="toggleView('exception-view')">
 <a id="nav-exception" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('category-view')">
-<a id="nav-category" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -81,12 +76,6 @@
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
-<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Regression</a>
-</ul>
-</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
@@ -95,9 +84,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">User login 2</p>
+            <p class="name">User login data driven test</p>
             <p class="text-sm">
-              <span>7:16:04 pm</span> / <span>00:01:49:247</span>
+              <span>8:37:46 pm</span> / <span>00:02:04:860</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -105,10 +94,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">User login 2</h5>
-<span class='badge badge-success'>10.06.2024 7:16:04 pm</span>
-<span class='badge badge-danger'>10.06.2024 7:17:53 pm</span>
-<span class='badge badge-default'>00:01:49:247</span>
+<h5 class="test-status text-fail">User login data driven test</h5>
+<span class='badge badge-success'>10.06.2024 8:37:46 pm</span>
+<span class='badge badge-danger'>10.06.2024 8:39:51 pm</span>
+<span class='badge badge-default'>00:02:04:860</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -121,7 +110,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>To test login with valid set of credentials</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login with valid set of data from excel</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -131,7 +120,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>To test login with valid set of credentials</div>
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Login with valid set of data from excel</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -141,17 +130,7 @@
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When User enters email as "jejurkar.mahesh@gmail.com" and password as "Mahesh@1990"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User clicks on login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User should be redirected to myaccount page</span>
+                    <span>Then User should be redirected to the myaccount page by passing email and password with excel row "1"</span>
       <div>
       </div>
                   </div>
@@ -160,7 +139,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>To test login with valid set of credentials</div>
+                  <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Login with valid set of data from excel</div>
                     <div class="status-avatar float-right">
                       <i class="fa fa-paperclip"></i>
                     </div>
@@ -172,33 +151,22 @@
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
-                    <span>When User enters email as "abc.xyz@jollyfree.com" and password as "abc@xyzz"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User clicks on login button</span>
-      <div>
-      </div>
-                  </div>
                   <div class="step fail-bg">
-                    <span>Then User should be redirected to myaccount page</span>
+                    <span>Then User should be redirected to the myaccount page by passing email and password with excel row "2"</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected:<true> but was:<false>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepsdefinitions.LoginSteps.user_should_be_redirected_to_myaccount_page(LoginSteps.java:56)
-	at ✽.User should be redirected to myaccount page(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_2.feature:8)
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.LoginSteps_DDT.user_should_be_redirected_to_the_myaccount_page_by_passing_email_and_password_with_excel_row(LoginSteps_DDT.java:62)
+	at ✽.User should be redirected to the myaccount page by passing email and password with excel row "2"(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_DDT.feature:5)
 </textarea>
       
       </div>
                   </div>
                   <div class="step pass-bg">
                     <span>hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
-      <div>To test login with valid set of credentials
+      <div>Login with valid set of data from excel
           <div class="row mb-3"><div class="col-md-3">
     
 
@@ -259,75 +227,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:17:31 pm</td>
+<td>20:39:29 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='22'>Then User should be redirected to myaccount page</a>
+<a href="#" class="linked" test-id='1' id='14'>Then User should be redirected to the myaccount page by passing email and password with excel row "2"</a>
 <div class="">
-<span class="badge badge-default">User login 2.To test login with valid set of credentials.Then User should be redirected to myaccount page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@Regression</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:16:04 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>To test login with valid set of credentials</a>
-<div class="">
-<span class="badge badge-default">User login 2.To test login with valid set of credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:17:02 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='14'>To test login with valid set of credentials</a>
-<div class="">
-<span class="badge badge-default">User login 2.To test login with valid set of credentials</span>
+<span class="badge badge-default">User login data driven test.Login with valid set of data from excel.Then User should be redirected to the myaccount page by passing email and password with excel row "2"</span>
 </div>
 </td>
 </tr>
@@ -348,13 +252,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 6, 2024 07:16:03 pm</h3>
+<h3>Oct 6, 2024 08:37:46 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 6, 2024 07:17:53 pm</h3>
+<h3>Oct 6, 2024 08:39:51 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -425,9 +329,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='88%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='11%'><b>1</b> steps failed,
+<small data-tooltip='20%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -444,27 +348,10 @@
 </div></div>
 <script>
 var timeline = {
-"User login 2":109.247
+"User login data driven test":124.86
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 category-container">
-<div class="card">
-<div class="card-header"><p>Tags</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@Regression</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>50%</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
 </div>
 </div>
 <script>
@@ -481,7 +368,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
+passGrandChild: 4,
 failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,

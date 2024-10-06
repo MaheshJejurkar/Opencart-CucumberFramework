@@ -43,7 +43,7 @@ public class Hooks {
 		if (scenario.isFailed()) {
 			TakesScreenshot screenshot = (TakesScreenshot) driver;
 			byte[] sourceFile = screenshot.getScreenshotAs(OutputType.BYTES);
-			scenario.attach(sourceFile, "image/png",scenario.getName());
+			scenario.attach(sourceFile, "image/png", scenario.getName());
 		}
 	}
 }

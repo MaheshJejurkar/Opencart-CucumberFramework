@@ -9,15 +9,15 @@ import io.cucumber.testng.CucumberOptions;
 								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 								"rerun:failed-scenario/failedScenario.txt"
 							},
-					glue = {"stepsdefinitions","hooks"},
+					glue = {"stepDefinitions","hooks"},
 					monochrome = true,
 					publish = true,
 					dryRun = false,
 					//features = {"src/test/java/features/"}
 					//features = {"src/test/java/features/registration.feature"}
-					//features = {"src/test/java/features/login_1.feature"}
-					features = {"src/test/java/features/login_2.feature"}
-					//features = {"src/test/java/features/login_DDT.feature"}
+					//features = {"src/test/java/features/login_2.feature"}
+					//features = {"src/test/java/features/login_2.feature"}
+					features = {"src/test/java/features/login_DDT.feature"}
 					//features = {"src/test/java/features/login_1.feature", "src/test/java/features/login_2.feature"}
 					//features = {"@target/rerun.txt"}
 					//tags = "@Sanity"
@@ -27,6 +27,6 @@ import io.cucumber.testng.CucumberOptions;
 					//tags = "@Sanity and not @Regression"
 					//tags = "@Regression and not @Sanity"
 		)
-public class RunnerClass extends AbstractTestNGCucumberTests{
+public class TestRunner extends AbstractTestNGCucumberTests{
 
 }

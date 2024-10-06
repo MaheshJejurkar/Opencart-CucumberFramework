@@ -27,10 +27,12 @@ public class LoginSteps_DDT {
 	public void user_should_be_redirected_to_the_myaccount_page_by_passing_email_and_password_with_excel_row(
 			String rows) {
 		try {
-			datamap = DataReader.data(System.getProperty("user.dir") + "\\testdata\\OpenCart_TestData.xlsx", "Sheet1");
-		} catch (Exception e) {
+				datamap = DataReader.data(System.getProperty("user.dir") + "\\testdata\\Opencart_Testdata.xlsx", "Sheet1");
+		} 
+		catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 		int index = Integer.parseInt(rows) - 1;
 		String email = datamap.get(index).get("Username");
 		String password = datamap.get(index).get("Password");
@@ -54,10 +56,10 @@ public class LoginSteps_DDT {
 					BaseClass.scrollToHeight();
 					BaseClass.getLogger().info("Clicked logout.");
 					accountpage.clickLogout();
-					Assert.assertEquals(true, pageStatus);
+					Assert.assertTrue(pageStatus);
 				} else {
 					BaseClass.getLogger().info("User login failed.");
-					Assert.assertEquals(true, false);
+					Assert.assertTrue(pageStatus);
 				}
 			}
 			if (expectedResult.equalsIgnoreCase("Invalid")) {
@@ -73,7 +75,7 @@ public class LoginSteps_DDT {
 				}
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println(e);
 		}
 
 	}

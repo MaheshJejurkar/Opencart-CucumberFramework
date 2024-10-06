@@ -1,4 +1,4 @@
-Feature: User login
+Feature: User login data driven test
 
   Scenario Outline: Login with valid set of data from excel
     Given User navigate to login page

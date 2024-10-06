@@ -32,21 +32,21 @@ public class BaseClass {
 	public static WebDriver initializeBrowser() throws Exception {
 
 		properties = getProperties();
-		String executionEnv = properties.getProperty("ExecutionEnv").toLowerCase();
+		String environment = properties.getProperty("Environment").toLowerCase();
 		String browser = properties.getProperty("Browser").toLowerCase();
 		String os = properties.getProperty("OS").toLowerCase();
 
-		if (executionEnv.equals("remote")) {
+		if (environment.equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
-			switch (os) {
+			switch (os.toLowerCase()) {
 			case "windows": capabilities.setPlatform(Platform.WIN11); break;
 			case "mac" : capabilities.setPlatform(Platform.MAC); break;
 			case "linux" : capabilities.setPlatform(Platform.LINUX); break;
 			default : System.out.println("No match to OS."); return null;
 			}
 			
-			switch (browser) {
+			switch (browser.toLowerCase()) {
 			case "chrome" : capabilities.setBrowserName("chrome"); break;
 			case "firefox" : capabilities.setBrowserName("firefox"); break;
 			case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
@@ -55,15 +55,15 @@ public class BaseClass {
 			driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
 			
 		}else 
-			if (executionEnv.equals("local")) {
-			switch (browser) {
+			if (environment.equalsIgnoreCase("local")) {
+			switch (browser.toLowerCase()) {
 			case "chrome": driver = new ChromeDriver(); break;
 			case "edge": driver = new EdgeDriver(); break;
 			case "firefox": driver = new FirefoxDriver(); break;
-			default: System.out.println("No match to broser."); return null;
+			default: System.out.println("No match to browser."); return null;
 		  }
 		}else {
-			System.out.println("Invalid environment set.");
+			System.out.println("No match to environment.");
 			return null;
 		}
 		driver.manage().deleteAllCookies();
@@ -78,7 +78,7 @@ public class BaseClass {
 	}
 	
 	public static Properties getProperties() throws Exception {
-		FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
+		FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\global.properties");
 		properties = new Properties();
 		properties.load(file);
 		return properties;
