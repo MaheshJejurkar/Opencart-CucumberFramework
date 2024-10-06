@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 06 00:14:15 IST 2024</td>
+<td>Started on:</td><td>Sun Oct 06 19:16:03 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>112 seconds (112090 ms)</td>
+<tr><td>Total time:</td><td>115 seconds (115068 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,35 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test login with valid set of credentials", "User login 2"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepsdefinitions.LoginSteps.user_should_be_redirected_to_myaccount_page(LoginSteps.java:56)
+	at ✽.User should be redirected to myaccount page(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_2.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1381702512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381702512'><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepsdefinitions.LoginSteps.user_should_be_redirected_to_myaccount_page(LoginSteps.java:56)
+	at ✽.User should be redirected to myaccount page(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_2.feature:8)
+</pre></div></td>
+<td>51</td>
+<td>testrunner.RunnerClass@2002fc1d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,13 +107,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='testrunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test login with valid set of credentials", "User login 2"</td>
 <td></td>
-<td>52</td>
-<td>testrunner.RunnerClass@6f4a47c7</td></tr>
-<tr>
-<td title='testrunner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: testrunner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test login with valid set of credentials", "User login 2"</td>
-<td></td>
-<td>56</td>
-<td>testrunner.RunnerClass@6f4a47c7</td></tr>
+<td>58</td>
+<td>testrunner.RunnerClass@2002fc1d</td></tr>
 </table><p>
 </body>
 </html>
