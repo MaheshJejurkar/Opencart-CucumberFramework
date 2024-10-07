@@ -1,7 +1,7 @@
 package stepDefinitions;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,11 +19,12 @@ public class LoginSteps {
 	LoginPage loginpage;
 	AccountPage accountpage;
 	
+	String emailAddress;
+	
 	@Given("User navigate to login page")
 	public void user_navigate_to_login_page() throws Exception {
 		BaseClass.getLogger().info("Launched application.");
 		homepage = new HomePage(BaseClass.getDriver());
-
 		Thread.sleep(1000);
 		BaseClass.getLogger().info("Clicked my account link.");
 		homepage.clickMyaccount();
@@ -34,6 +35,7 @@ public class LoginSteps {
 	@When("User enters email as {string} and password as {string}")
 	public void user_enters_email_as_and_password_as(String email, String password) throws Exception {
 		Thread.sleep(1000);
+		emailAddress = email;
 		loginpage = new LoginPage(BaseClass.getDriver());
 		BaseClass.getLogger().info("Entered email.");
 		loginpage.enterEmail(email);
@@ -54,8 +56,9 @@ public class LoginSteps {
 		accountpage = new AccountPage(BaseClass.getDriver());
 		boolean result = accountpage.isMyAccountPageExists();
 		Assert.assertEquals(true, result);
+		BaseClass.getLogger().info(emailAddress);
 		BaseClass.getLogger().info("User logged in successfully.");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		BaseClass.scrollToHeight();
 		BaseClass.getLogger().info("Cliked logout.");
 		accountpage.clickLogout();

@@ -18,9 +18,8 @@ public class Hooks {
 
 	@Before
 	public void setup() throws Exception {
-
-		Runtime.getRuntime().exec("cmd /c start_dockergrid.bat");
-		Thread.sleep(20000);
+//		Runtime.getRuntime().exec("cmd /c start_dockergrid.bat");
+//		Thread.sleep(20000);
 
 		properties = BaseClass.getProperties();
 		driver = BaseClass.initializeBrowser();
@@ -32,9 +31,9 @@ public class Hooks {
 		Thread.sleep(1000);
 		driver.quit();
 
-		Runtime.getRuntime().exec("cmd /c stop_dockergrid.bat");
-		Thread.sleep(20000);
-		//Runtime.getRuntime().exec("taskkill /f /im cmd.exe");
+//		Runtime.getRuntime().exec("cmd /c stop_dockergrid.bat");
+//		Thread.sleep(20000);
+//		Runtime.getRuntime().exec("taskkill /f /im cmd.exe");
 
 	}
 

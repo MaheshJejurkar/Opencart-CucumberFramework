@@ -3,8 +3,8 @@ package stepDefinitions;
 import java.util.HashMap;
 import java.util.List;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.*;
 import pageObjects.AccountPage;
@@ -20,7 +20,7 @@ public class LoginSteps_DDT {
 	HomePage homepage;
 	LoginPage loginpage;
 	AccountPage accountpage;
-
+	
 	List<HashMap<String, String>> datamap;
 
 	@Then("User should be redirected to the myaccount page by passing email and password with excel row {string}")
@@ -52,24 +52,28 @@ public class LoginSteps_DDT {
 			boolean pageStatus = accountpage.isMyAccountPageExists();
 			if (expectedResult.equalsIgnoreCase("Valid")) {
 				if (pageStatus == true) {
+					BaseClass.getLogger().info(expectedResult+" user: "+email);
 					BaseClass.getLogger().info("User logged in successfully.");
 					BaseClass.scrollToHeight();
 					BaseClass.getLogger().info("Clicked logout.");
 					accountpage.clickLogout();
 					Assert.assertTrue(pageStatus);
 				} else {
+					BaseClass.getLogger().info(expectedResult+" user: "+email);
 					BaseClass.getLogger().info("User login failed.");
 					Assert.assertTrue(pageStatus);
 				}
 			}
 			if (expectedResult.equalsIgnoreCase("Invalid")) {
 				if (pageStatus == true) {
+					BaseClass.getLogger().info(expectedResult+" user: "+email);
 					BaseClass.getLogger().info("User logged in.");
 					BaseClass.scrollToHeight();
 					BaseClass.logger.info("Clicked logout.");
 					accountpage.clickLogout();
 					Assert.assertTrue(false);
 				} else {
+					BaseClass.getLogger().info(expectedResult+" user: "+email);
 					BaseClass.getLogger().info("User login failed.");
 					Assert.assertTrue(true);
 				}

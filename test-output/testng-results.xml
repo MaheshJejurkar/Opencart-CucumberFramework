@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-06T20:40:55 IST" name="Default suite" finished-at="2024-10-06T20:42:36 IST" duration-ms="101004">
+  <suite started-at="2024-10-07T17:54:05 IST" name="Default suite" finished-at="2024-10-07T17:54:24 IST" duration-ms="19809">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@2002fc1d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@37ceb1df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-10-06T20:40:55 IST" name="Default test" finished-at="2024-10-06T20:42:36 IST" duration-ms="101004">
+    <test started-at="2024-10-07T17:54:05 IST" name="Default test" finished-at="2024-10-07T17:54:24 IST" duration-ms="19809">
       <class name="testRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@2002fc1d]" started-at="2024-10-06T20:40:55 IST" name="setUpClass" finished-at="2024-10-06T20:40:56 IST" duration-ms="766" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@37ceb1df]" started-at="2024-10-07T17:54:05 IST" name="setUpClass" finished-at="2024-10-07T17:54:05 IST" duration-ms="816" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2152fde5]]>
+                <![CDATA[org.testng.TestRunner@1f5d7fd5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@2002fc1d]" started-at="2024-10-06T20:40:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-06T20:41:45 IST" duration-ms="48681" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with valid set of data from excel"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User login data driven test"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@2002fc1d]" started-at="2024-10-06T20:41:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-06T20:42:31 IST" duration-ms="46295" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@37ceb1df]" started-at="2024-10-07T17:54:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-07T17:54:14 IST" duration-ms="8917" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -51,12 +35,47 @@
             </param>
           </params>
           <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:87)
-at org.junit.Assert.assertTrue(Assert.java:42)
-at org.junit.Assert.assertTrue(Assert.java:53)
-at stepDefinitions.LoginSteps_DDT.user_should_be_redirected_to_the_myaccount_page_by_passing_email_and_password_with_excel_row(LoginSteps_DDT.java:62)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at stepDefinitions.LoginSteps_DDT.user_should_be_redirected_to_the_myaccount_page_by_passing_email_and_password_with_excel_row(LoginSteps_DDT.java:74)
+at ✽.User should be redirected to the myaccount page by passing email and password with excel row "1"(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_DDT.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@37ceb1df]" started-at="2024-10-07T17:54:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-07T17:54:21 IST" duration-ms="6741" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid set of data from excel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User login data driven test"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at stepDefinitions.LoginSteps_DDT.user_should_be_redirected_to_the_myaccount_page_by_passing_email_and_password_with_excel_row(LoginSteps_DDT.java:64)
 at ✽.User should be redirected to the myaccount page by passing email and password with excel row "2"(file:///C:/Users/Mahesh/eclipse-workspace/Opencart-CucumberFramework/src/test/java/features/login_DDT.feature:5)
 ]]>
             </full-stacktrace>
@@ -64,7 +83,7 @@ at ✽.User should be redirected to the myaccount page by passing email and pass
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@2002fc1d]" started-at="2024-10-06T20:42:31 IST" name="tearDownClass" finished-at="2024-10-06T20:42:36 IST" duration-ms="5206" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@37ceb1df]" started-at="2024-10-07T17:54:21 IST" name="tearDownClass" finished-at="2024-10-07T17:54:24 IST" duration-ms="3282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -36,17 +36,17 @@ public class BaseClass {
 		String browser = properties.getProperty("Browser").toLowerCase();
 		String os = properties.getProperty("OS").toLowerCase();
 
-		if (environment.equalsIgnoreCase("remote")) {
+		if (environment.equals("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
-			switch (os.toLowerCase()) {
+			switch (os) {
 			case "windows": capabilities.setPlatform(Platform.WIN11); break;
 			case "mac" : capabilities.setPlatform(Platform.MAC); break;
 			case "linux" : capabilities.setPlatform(Platform.LINUX); break;
 			default : System.out.println("No match to OS."); return null;
 			}
 			
-			switch (browser.toLowerCase()) {
+			switch (browser) {
 			case "chrome" : capabilities.setBrowserName("chrome"); break;
 			case "firefox" : capabilities.setBrowserName("firefox"); break;
 			case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
@@ -55,8 +55,8 @@ public class BaseClass {
 			driver = new RemoteWebDriver(new URL("http://localhost:4444"), capabilities);
 			
 		}else 
-			if (environment.equalsIgnoreCase("local")) {
-			switch (browser.toLowerCase()) {
+			if (environment.equals("local")) {
+			switch (browser) {
 			case "chrome": driver = new ChromeDriver(); break;
 			case "edge": driver = new EdgeDriver(); break;
 			case "firefox": driver = new FirefoxDriver(); break;
@@ -67,9 +67,8 @@ public class BaseClass {
 			return null;
 		}
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return driver;
 	}
 
@@ -94,18 +93,17 @@ public class BaseClass {
 		return logger;
 	}
 
-	public static String randomString() {
+	public static String getRandomString() {
 		return RandomStringUtils.randomAlphabetic(5);
 	}
 
-	public static String randomNumber() {
+	public static String getRandomNumber() {
 		return RandomStringUtils.randomNumeric(10);
 	}
 
-	public static String randomAlphaNumeric() {
-		String generatedstring = RandomStringUtils.randomAlphabetic(3);
-		String generatednumber = RandomStringUtils.randomNumeric(3);
-		return (generatedstring + "." + generatednumber);
+	public static String getEmailAddress() {
+		String generatedEmail = RandomStringUtils.randomAlphabetic(5) +"."+RandomStringUtils.randomAlphabetic(5)+"@gmail.com";
+		return generatedEmail;
 	}
 	
 	public static void scrollToHeight() {

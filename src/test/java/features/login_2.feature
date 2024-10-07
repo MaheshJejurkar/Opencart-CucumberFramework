@@ -10,4 +10,4 @@ Feature: User login 2
     Examples: 
       | Email                     | Password    |
       | jejurkar.mahesh@gmail.com | Mahesh@1990 |
-      | abc.xyz@jollyfree.com     | abc@xyzz     |
+      | abc.xyz@jollyfree.com     | abc@xyz     |

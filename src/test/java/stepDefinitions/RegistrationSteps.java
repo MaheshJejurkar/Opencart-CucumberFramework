@@ -2,10 +2,11 @@ package stepDefinitions;
 
 import java.util.Map;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.*;
+import io.cucumber.datatable.DataTable;
 import pageObjects.AccountPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
@@ -19,6 +20,8 @@ public class RegistrationSteps {
 	LoginPage loginpage;
 	AccountPage accountpage;
 	RegistrationPage registrationpage;
+	
+	String emailAddress;
 
 	@Given("User navigate to register account page")
 	public void user_navigate_to_register_account_page() throws Exception {
@@ -33,18 +36,19 @@ public class RegistrationSteps {
 	}
 
 	@When("User enters the details into below fields")
-	public void user_enters_the_details_into_below_fields(io.cucumber.datatable.DataTable dataTable) throws Exception {
+	public void user_enters_the_details_into_below_fields(DataTable dataTable) throws Exception {
 		Thread.sleep(1000);
 
 		Map<String, String> dataMap = dataTable.asMap(String.class, String.class);
 		registrationpage = new RegistrationPage(BaseClass.getDriver());
 
+		emailAddress = BaseClass.getEmailAddress();
 		BaseClass.getLogger().info("Entered first name.");
 		registrationpage.enterFirstname(dataMap.get("firstName"));
 		BaseClass.getLogger().info("Entered last name.");
 		registrationpage.enterLastname(dataMap.get("lastName"));
 		BaseClass.getLogger().info("Entered email.");
-		registrationpage.enterEmail(BaseClass.randomAlphaNumeric() + "@gmail.com");
+		registrationpage.enterEmail(emailAddress);
 		BaseClass.getLogger().info("Entered telephone.");
 		registrationpage.enterTelephoneNo(dataMap.get("telephone"));
 		BaseClass.getLogger().info("Entered password.");
@@ -73,6 +77,7 @@ public class RegistrationSteps {
 		String actualMsg = accountpage.isAccountCreated();
 		String expectedMsg = "Your Account Has Been Created!";
 		Assert.assertEquals(expectedMsg, actualMsg);
+		BaseClass.getLogger().info(emailAddress);
 		BaseClass.getLogger().info(actualMsg);
 		Thread.sleep(2000);
 		BaseClass.scrollToHeight();
