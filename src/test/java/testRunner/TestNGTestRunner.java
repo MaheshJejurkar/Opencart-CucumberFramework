@@ -27,6 +27,6 @@ import io.cucumber.testng.CucumberOptions;
 					//tags = "@Sanity and not @Regression"
 					//tags = "@Regression and not @Sanity"
 		)
-public class TestRunner extends AbstractTestNGCucumberTests{
+public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 
 }
