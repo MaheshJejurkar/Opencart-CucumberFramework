@@ -25,20 +25,16 @@ public class RegistrationSteps {
 
 	@Given("User navigate to register account page")
 	public void user_navigate_to_register_account_page() throws Exception {
-		Thread.sleep(1000);
 		BaseClass.getLogger().info("Launched application.");
 		homepage = new HomePage(BaseClass.getDriver());
 		BaseClass.getLogger().info("Clicked my account.");
 		homepage.clickMyaccount();
-		Thread.sleep(1000);
 		BaseClass.getLogger().info("Clicked login.");
 		homepage.clickRegister();
 	}
 
 	@When("User enters the details into below fields")
 	public void user_enters_the_details_into_below_fields(DataTable dataTable) throws Exception {
-		Thread.sleep(1000);
-
 		Map<String, String> dataMap = dataTable.asMap(String.class, String.class);
 		registrationpage = new RegistrationPage(BaseClass.getDriver());
 
@@ -65,21 +61,18 @@ public class RegistrationSteps {
 
 	@When("User clicks on continue button")
 	public void user_clicks_on_continue_button() throws Exception {
-		Thread.sleep(1000);
 		BaseClass.getLogger().info("Clicked continue.");
 		registrationpage.clickContinue();
 	}
 
 	@Then("User account should get created successfully.")
 	public void user_account_should_get_created_successfully() throws Exception {
-		Thread.sleep(1000);
 		accountpage = new AccountPage(BaseClass.getDriver());
 		String actualMsg = accountpage.isAccountCreated();
 		String expectedMsg = "Your Account Has Been Created!";
 		Assert.assertEquals(expectedMsg, actualMsg);
 		BaseClass.getLogger().info(emailAddress);
 		BaseClass.getLogger().info(actualMsg);
-		Thread.sleep(2000);
 		BaseClass.scrollToHeight();
 		BaseClass.getLogger().info("Clicked logout.");
 		accountpage.clickLogout();

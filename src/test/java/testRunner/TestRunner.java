@@ -16,8 +16,8 @@ import io.cucumber.testng.CucumberOptions;
 					//features = {"src/test/java/features/"}
 					//features = {"src/test/java/features/registration.feature"}
 					//features = {"src/test/java/features/login_1.feature"}
-					//features = {"src/test/java/features/login_2.feature"}
-					features = {"src/test/java/features/login_DDT.feature"}
+					features = {"src/test/java/features/login_2.feature"}
+					//features = {"src/test/java/features/login_DDT.feature"}
 					//features = {"src/test/java/features/login_1.feature", "src/test/java/features/login_2.feature"}
 					//features = {"@target/rerun.txt"}
 					//tags = "@Sanity"

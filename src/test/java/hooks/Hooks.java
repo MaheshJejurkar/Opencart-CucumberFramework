@@ -28,13 +28,11 @@ public class Hooks {
 
 	@After
 	public void tearDown() throws Exception {
-		Thread.sleep(1000);
 		driver.quit();
 
 //		Runtime.getRuntime().exec("cmd /c stop_dockergrid.bat");
 //		Thread.sleep(20000);
 //		Runtime.getRuntime().exec("taskkill /f /im cmd.exe");
-
 	}
 
 	@AfterStep

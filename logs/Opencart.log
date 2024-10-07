@@ -245,3 +245,55 @@
 07-10-2024-05-54-19-pm [main] INFO Opencart - Clicked login.
 07-10-2024-05-54-20-pm [main] INFO Opencart - Valid user: mahesh@gmail.com
 07-10-2024-05-54-20-pm [main] INFO Opencart - User login failed.
+07-10-2024-06-04-09-pm [main] INFO Opencart - Launched application.
+07-10-2024-06-04-10-pm [main] INFO Opencart - Clicked my account link.
+07-10-2024-06-04-10-pm [main] INFO Opencart - Clicked login link.
+07-10-2024-06-04-11-pm [main] INFO Opencart - Entered email.
+07-10-2024-06-04-12-pm [main] INFO Opencart - Entered password.
+07-10-2024-06-04-12-pm [main] INFO Opencart - Clicked login.
+07-10-2024-06-04-12-pm [main] INFO Opencart - Valid user: jejurkar.mahesh@gmail.com
+07-10-2024-06-04-12-pm [main] INFO Opencart - User logged in successfully.
+07-10-2024-06-04-12-pm [main] INFO Opencart - Clicked logout.
+07-10-2024-06-04-17-pm [main] INFO Opencart - Launched application.
+07-10-2024-06-04-18-pm [main] INFO Opencart - Clicked my account link.
+07-10-2024-06-04-18-pm [main] INFO Opencart - Clicked login link.
+07-10-2024-06-04-18-pm [main] INFO Opencart - Entered email.
+07-10-2024-06-04-18-pm [main] INFO Opencart - Entered password.
+07-10-2024-06-04-18-pm [main] INFO Opencart - Clicked login.
+07-10-2024-06-04-19-pm [main] INFO Opencart - Invalid user: mahesh@gmail.com
+07-10-2024-06-04-19-pm [main] INFO Opencart - User login failed.
+07-10-2024-06-08-31-pm [main] INFO Opencart - Launched application.
+07-10-2024-06-08-31-pm [main] INFO Opencart - Clicked my account link.
+07-10-2024-06-08-31-pm [main] INFO Opencart - Clicked login link.
+07-10-2024-06-08-33-pm [main] INFO Opencart - Entered email.
+07-10-2024-06-08-33-pm [main] INFO Opencart - Entered password.
+07-10-2024-06-08-33-pm [main] INFO Opencart - Clicked login.
+07-10-2024-06-08-34-pm [main] INFO Opencart - Valid user: jejurkar.mahesh@gmail.com
+07-10-2024-06-08-34-pm [main] INFO Opencart - User logged in successfully.
+07-10-2024-06-08-34-pm [main] INFO Opencart - Clicked logout.
+07-10-2024-06-08-38-pm [main] INFO Opencart - Launched application.
+07-10-2024-06-08-38-pm [main] INFO Opencart - Clicked my account link.
+07-10-2024-06-08-39-pm [main] INFO Opencart - Clicked login link.
+07-10-2024-06-08-39-pm [main] INFO Opencart - Entered email.
+07-10-2024-06-08-39-pm [main] INFO Opencart - Entered password.
+07-10-2024-06-08-39-pm [main] INFO Opencart - Clicked login.
+07-10-2024-06-08-40-pm [main] INFO Opencart - Invalid user: mahesh@gmail.com
+07-10-2024-06-08-40-pm [main] INFO Opencart - User login failed.
+07-10-2024-06-09-13-pm [main] INFO Opencart - Launched application.
+07-10-2024-06-09-13-pm [main] INFO Opencart - Clicked my account link.
+07-10-2024-06-09-13-pm [main] INFO Opencart - Clicked login link.
+07-10-2024-06-09-13-pm [main] INFO Opencart - Entered email.
+07-10-2024-06-09-13-pm [main] INFO Opencart - Entered password.
+07-10-2024-06-09-14-pm [main] INFO Opencart - Clicked login.
+07-10-2024-06-09-14-pm [main] INFO Opencart - jejurkar.mahesh@gmail.com
+07-10-2024-06-09-14-pm [main] INFO Opencart - User logged in successfully.
+07-10-2024-06-09-15-pm [main] INFO Opencart - Cliked logout.
+07-10-2024-06-09-19-pm [main] INFO Opencart - Launched application.
+07-10-2024-06-09-19-pm [main] INFO Opencart - Clicked my account link.
+07-10-2024-06-09-19-pm [main] INFO Opencart - Clicked login link.
+07-10-2024-06-09-19-pm [main] INFO Opencart - Entered email.
+07-10-2024-06-09-20-pm [main] INFO Opencart - Entered password.
+07-10-2024-06-09-20-pm [main] INFO Opencart - Clicked login.
+07-10-2024-06-09-21-pm [main] INFO Opencart - abc.xyz@jollyfree.com
+07-10-2024-06-09-21-pm [main] INFO Opencart - User logged in successfully.
+07-10-2024-06-09-22-pm [main] INFO Opencart - Cliked logout.
