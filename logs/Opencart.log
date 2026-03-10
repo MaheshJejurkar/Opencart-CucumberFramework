@@ -1,0 +1,180 @@
+25-02-2026-05-53-00-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-05-53-01-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-05-53-01-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-05-53-01-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-05-53-02-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-05-53-03-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - abc.xyz@jollyfree.com
+25-02-2026-05-53-03-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-05-53-04-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-05-53-04-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-05-53-05-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-05-53-06-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-05-53-08-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-05-53-08-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-05-53-09-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-05-57-51-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-05-57-51-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-05-57-52-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-05-57-53-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-05-57-54-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-05-57-54-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-05-57-56-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-05-57-56-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-05-57-57-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-06-02-20-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-06-02-20-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-06-02-21-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-06-02-21-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-06-02-22-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-06-02-22-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-06-02-22-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-06-02-23-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-06-02-23-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-06-02-25-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-06-02-26-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-06-02-28-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - abc.xyz@jollyfree.com
+25-02-2026-06-02-28-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-06-02-29-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-06-17-06-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-06-17-06-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-06-17-06-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-06-17-07-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-06-17-07-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-06-17-07-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-06-17-08-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-06-17-08-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-06-17-09-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-06-27-02-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-06-27-02-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-06-27-02-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-06-27-03-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-06-27-03-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-06-27-03-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-06-27-05-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - abc.xyz@jollyfree.com
+25-02-2026-06-27-05-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-06-27-06-pm [TestNG-PoolService-2] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-27-51-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-27-51-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-27-52-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-27-52-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-27-53-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-27-53-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-27-55-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-10-27-55-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-10-27-56-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-32-56-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-32-56-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-32-56-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-32-57-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-32-58-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-32-59-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-33-01-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-10-33-01-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-10-33-02-pm [TestNG-PoolService-1] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-35-20-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-35-20-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-35-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-35-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-35-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-35-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-35-24-pm [main] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-10-35-24-pm [main] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-10-35-25-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-35-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-35-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-35-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-35-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-35-32-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-35-32-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-35-33-pm [main] INFO com.abc.stepDefinitions.LoginSteps - abc.xyz@jollyfree.com
+25-02-2026-10-35-33-pm [main] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-10-35-34-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-39-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-39-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-39-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-39-23-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-39-23-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-39-24-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-39-25-pm [main] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-10-39-25-pm [main] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-10-39-26-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-39-30-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-39-30-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-39-30-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-39-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-39-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-39-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-50-44-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-50-44-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-51-08-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-52-49-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-52-49-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-53-28-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-55-11-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-55-11-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-55-12-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-55-13-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-55-14-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-55-14-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-55-15-pm [main] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-10-55-15-pm [main] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-10-55-16-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-55-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-55-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-55-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-55-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-55-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-55-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-57-43-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-57-43-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-57-44-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-57-45-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-57-45-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-57-46-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-10-57-47-pm [main] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-10-57-47-pm [main] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-10-57-48-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-10-57-55-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-10-57-55-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-10-57-55-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-10-57-56-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-10-57-56-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-10-57-57-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-11-04-07-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-11-04-07-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-11-04-07-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-11-04-08-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-11-04-08-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-11-04-09-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-11-04-10-pm [main] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-11-04-10-pm [main] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-11-04-11-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-11-04-16-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-11-04-16-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-11-04-16-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-11-04-16-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-11-04-16-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-11-04-16-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-11-39-20-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-11-39-20-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-11-39-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-11-39-21-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-11-39-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-11-39-22-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-11-39-23-pm [main] INFO com.abc.stepDefinitions.LoginSteps - jejurkar.mahesh@gmail.com
+25-02-2026-11-39-23-pm [main] INFO com.abc.stepDefinitions.LoginSteps - User logged in successfully.
+25-02-2026-11-39-24-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked logout.
+25-02-2026-11-39-30-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-11-39-30-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-11-39-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-11-39-31-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-11-39-32-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-11-39-32-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-11-41-14-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-11-41-14-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
+25-02-2026-11-41-14-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login link.
+25-02-2026-11-41-14-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered email.
+25-02-2026-11-41-15-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Entered password.
+25-02-2026-11-41-15-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked login.
+25-02-2026-11-43-17-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Launched application.
+25-02-2026-11-43-17-pm [main] INFO com.abc.stepDefinitions.LoginSteps - Clicked my account link.
